@@ -10,18 +10,13 @@ install.packages("factoextra")
 library(factoextra)
 
 # Load data
-data <- read.table("C:\\git\\school\\cscd429-hw4\\synthetic_control_data.txt", header = FALSE)
+data <- read.table("synthetic_control_data.txt", header = FALSE)
 str(data)
 
 # Use kmeans to cluster the data
 clustered_data <- kmeans(data, centers = 6)
 
 # Visualize the data
-str(clustered_data)
-clustered_data$cluster
-clustered_data$centers
-
-# Plot the clusters
 fviz_cluster(res.km, data = data,
              palette = c("#2E9FDF", "#00AFBB", "#E7B800", 
                          "#c21e1e", "#7b6aa7", "#d2893d"), 

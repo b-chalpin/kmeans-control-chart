@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import kmeans.*;
 
-public class CSCD429HW4Main {
+public class KMeansMain {
 	public static void main(String[] args) throws IOException {
 		System.out.println("Beginning k-means clustering for 6 clusters...");
 		
